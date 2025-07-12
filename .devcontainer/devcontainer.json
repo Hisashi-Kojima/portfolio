@@ -19,7 +19,7 @@
 	"workspaceFolder": "/app",
 	"features": {
 		"ghcr.io/devcontainers-extra/features/node-asdf:0": {}
-	},
+	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -32,9 +32,6 @@
 
 	// Uncomment the next line if you want to keep your containers running after VS Code shuts down.
 	// "shutdownAction": "none",
-
-	// Run commands after the container is created.
-	"postCreateCommand": "cd /app && npm install",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
