@@ -6,8 +6,7 @@
 	// 上から順に読み込んでいき、
 	// 下のファイルが上のファイルを上書きするイメージ
 	"dockerComposeFile": [
-		"../docker-compose.yml",
-		"docker-compose.yml"
+		"../docker-compose.yml"
 	],
 
 	// The 'service' property is the name of the service for the container that VS Code should
