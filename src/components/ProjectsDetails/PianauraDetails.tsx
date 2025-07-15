@@ -1,5 +1,7 @@
 'use client'
 
+import ExternalLink from '../ExternalLink'
+
 export default function PianauraDetails() {
   return (
     <>
@@ -13,6 +15,25 @@ export default function PianauraDetails() {
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
       ></iframe>
+      <p>
+        詳細：
+        <ExternalLink href="https://www.twels.co.jp/">
+          twelS株式会社
+        </ExternalLink>
+      </p>
+      <p>
+        目標は達成できませんでしたが、クラウドファンディングにも挑戦しました。
+        <br />
+        プロジェクトへの思いなどを記載しています。
+        <br />
+        <ExternalLink href="https://camp-fire.jp/projects/816321/view">
+          ピアノの鍵盤部分をキャンバスに！イラストや写真で自分だけのピアノに変身！
+        </ExternalLink>
+      </p>
+      <p>ピアノーラに関して、意匠権を日本で権利化しました。</p>
+      <ExternalLink href="https://www.j-platpat.inpit.go.jp/c1801/DE/JP-2024-027404/30/ja">
+        登録第1801102号
+      </ExternalLink>
     </>
   )
 }

@@ -2,21 +2,22 @@ export default function Experience() {
   const experiences = [
     {
       period: '2022年～現在',
-      organization: '佐賀大学 博士後期課程',
-      items: ['twelS株式会社を起業', 'ピアノーラ']
+      organization: '佐賀大学 数理・情報サイエンスコース（博士後期課程）',
+      items: ['twelS株式会社を起業', '新規事業「ピアノーラ」']
     },
     {
       period: '2020年～2022年',
-      organization: '佐賀大学 修士課程',
-      items: ['数式検索エンジン開発', 'ビジネスプランコンテスト入賞']
+      organization: '佐賀大学 理工学研究科 知能情報工学コース（修士課程）',
+      items: ['数式検索エンジンの研究開発', 'ビジネスプランコンテスト入賞']
     },
     {
       period: '2016年～2020年',
-      organization: '佐賀大学 学士課程',
+      organization: '佐賀大学 理工学部 知能情報システム学科（学士課程）',
       items: [
         'TOMODACHI Microsoft iLEAP Social Innovation and Leadership Program 2017',
         'インターンシップ 日本マイクロソフト株式会社でEmpowered Woman Japanの運営補助',
-        'インターンシップ 日本マイクロソフト株式会社でEmpowered Japanの運営補助'
+        'インターンシップ 日本マイクロソフト株式会社でEmpowered Japanの運営補助',
+        '入浴事故検知の研究'
       ]
     }
   ]

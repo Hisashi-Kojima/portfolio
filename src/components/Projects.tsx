@@ -20,8 +20,8 @@ const projects = [
     details: <SearchEngineDetails />
   },
   {
-    title: '入浴事故検知',
-    description: '',
+    title: '入浴事故検知の研究',
+    description: '学士3年後期から修士1年の夏までこの研究をしていました。',
     image: '/images/SearchEngine.png',
     details: <DrowsyBatherDetectionDetails />
   }
