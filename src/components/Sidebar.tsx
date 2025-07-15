@@ -1,17 +1,12 @@
 'use client'
 
+import Image from 'next/image'
+import SidebarIntro from './SidebarIntro'
+
 export default function Sidebar() {
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-3xl font-bold">小嶋　恒（こじま　ひさし）</h1>
-        <p className="text-gray-500 dark:text-gray-400">
-          ソフトウェアエンジニア
-        </p>
-      </div>
-      <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
-        アプリを作ったり、学生起業して新規事業に取り組んだりしています。
-      </p>
+      <SidebarIntro />
       <nav className="space-y-2">
         <a
           href="#about"
@@ -31,7 +26,23 @@ export default function Sidebar() {
         >
           プロジェクト
         </a>
+        <a
+          href="#other-works"
+          className="block text-gray-600 hover:text-black dark:hover:text-white"
+        >
+          その他の制作物
+        </a>
       </nav>
+
+      {/* 下部にプロフィール画像を表示 */}
+      <div className="relative h-60 w-full">
+        <Image
+          src={'/images/HisashiKojima.JPG'}
+          alt="小嶋恒の写真"
+          fill
+          className="object-contain rounded-lg"
+        />
+      </div>
     </div>
   )
 }
