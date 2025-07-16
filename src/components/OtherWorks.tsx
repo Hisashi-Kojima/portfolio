@@ -9,7 +9,7 @@ const otherWorks = [
   {
     title: '動画編集',
     description: 'DaVinci Resolveを使って動画編集をしました。',
-    image: '/images/pianaura.png',
+    image: '/images/pianaura_thumbnail.png',
     details: <VideoEditingDetails />
   },
   {

@@ -23,10 +23,32 @@ export default function DrowsyBatherDetectionDetails() {
       <p>
         取得した加速度データはPythonとグラフ描画ライブラリであるMatplotlibなどを活用して分析し、
         検知アルゴリズムを考案しました。
-        <br />
-        <br />
-        英語で論文を書きました。
       </p>
+      <br />
+      <p>様々なグラフ</p>
+      <iframe
+        width="auto"
+        height="100%"
+        src="https://www.youtube.com/embed/SAsWH9XU7Xw?si=F7P-Lspa_KhK75bT"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      ></iframe>
+      <br />
+      <p>時間変化のグラフ</p>
+      <iframe
+        width="auto"
+        height="100%"
+        src="https://www.youtube.com/embed/BXru-nQj9KY?si=VvVgpV1zZQGLJs8h"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      ></iframe>
+      <br />
+      <br />
+      <p>英語で論文を書きました。</p>
       <ExternalLink href="https://link.springer.com/chapter/10.1007/978-3-030-50017-7_34">
         Drowsy Bather Detection Using a Triaxial Accelerometer
       </ExternalLink>
