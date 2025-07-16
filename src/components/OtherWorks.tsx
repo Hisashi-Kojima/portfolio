@@ -14,14 +14,16 @@ const otherWorks = [
   },
   {
     title: 'mathMap',
-    description: 'グラフを活用。',
-    image: '/images/pianaura.png',
+    description:
+      'グラフを活用して数学やそこから発展した技術の関係性を可視化しました。',
+    image: '/images/mathMap.png',
     details: <MathMapDetails />
   },
   {
-    title: 'アナログゲーム',
-    description: 'アナログゲームをWebで作ってみました。',
-    image: '/images/pianaura.png',
+    title: 'RoRop',
+    description:
+      'アナログゲームのRoRopをWebアプリで作ってみました。開発期間：約1か月間',
+    image: '/images/rorop.png',
     details: <RoRopDetails />
   }
 ]

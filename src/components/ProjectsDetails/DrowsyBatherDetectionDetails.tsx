@@ -7,6 +7,24 @@ export default function DrowsyBatherDetectionDetails() {
     <div>
       <p>
         家族が入浴中に寝ていて危険だったことから、入浴中の事故について調べ始め、事故を防ぐために研究を行いました。
+        加速度センサーで頭部の動きをトラッキングしたかったので、加速度センサーのデータを取得するAndroidアプリをKotlinで作成しました。
+      </p>
+      <br />
+      <iframe
+        width="auto"
+        height="100%"
+        src="https://www.youtube.com/embed/Y79EFQA0YPk?si=9Y4MO-aZFbSvvRfq"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      ></iframe>
+      <br />
+      <p>
+        取得した加速度データはPythonとグラフ描画ライブラリであるMatplotlibなどを活用して分析し、
+        検知アルゴリズムを考案しました。
+        <br />
+        <br />
         英語で論文を書きました。
       </p>
       <ExternalLink href="https://link.springer.com/chapter/10.1007/978-3-030-50017-7_34">
