@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import clsx from 'clsx'
 
@@ -9,18 +9,45 @@ interface WorkCardProps {
   description: string
   image?: string
   details?: React.ReactNode
+  id: string
 }
 
 export default function WorkCard({
   title,
   description,
   image,
-  details
+  details,
+  id
 }: WorkCardProps) {
   const [isOpen, setIsOpen] = useState(false)
 
+  // ページ内リンクでWorkCardにジャンプした際に
+  // 自動的にOpenするための設定
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+
+    const handleHashChange = () => {
+      if (window.location.hash === `#${id}`) {
+        setIsOpen(true)
+      }
+    }
+
+    handleHashChange()
+    window.addEventListener('hashchange', handleHashChange)
+
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange)
+    }
+  }, [id])
+
   return (
-    <div className="bg-white dark:bg-zinc-800 rounded-xl shadow-md p-4 transition-all duration-300">
+    <div
+      id={id}
+      className={clsx(
+        'bg-white dark:bg-zinc-800 rounded-xl shadow-md p-4 transition-all',
+        isOpen && 'border border-blue-500'
+      )}
+    >
       <div
         className="flex items-center gap-4 cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
