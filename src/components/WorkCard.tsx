@@ -11,6 +11,40 @@ interface WorkCardProps {
   image?: string
   details?: React.ReactNode
   id: string
+  tags?: string[]
+}
+
+// タグのカテゴリ
+const programmingTags = [
+  'Python',
+  'Kotlin',
+  'Node.js',
+  'Next.js',
+  'React',
+  'Tailwind CSS',
+  'Docker',
+  'Django',
+  'Scrapy',
+  'MySQL',
+  'G6'
+]
+
+const techTags = [
+  'Bluetooth',
+  '加速度センサ',
+  '字句/構文解析',
+  'モバイルアプリ',
+  'DaVinci Resolve'
+]
+
+function getTagColor(tag: string): string {
+  if (programmingTags.includes(tag)) {
+    return 'bg-blue-100 text-blue-800 dark:bg-blue-200 dark:text-blue-900'
+  }
+  if (techTags.includes(tag)) {
+    return 'bg-green-100 text-green-800 dark:bg-green-200 dark:text-green-900'
+  }
+  return 'bg-purple-100 text-purple-800 dark:bg-purple-200 dark:text-purple-900'
 }
 
 export default function WorkCard({
@@ -18,7 +52,8 @@ export default function WorkCard({
   description,
   image,
   details,
-  id
+  id,
+  tags
 }: WorkCardProps) {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -69,7 +104,24 @@ export default function WorkCard({
           <p className="text-gray-600 dark:text-gray-300 text-sm">
             {description}
           </p>
+
+          {tags && tags.length > 0 && (
+            <div className="mt-4 flex flex-wrap gap-2">
+              {tags.map((tag, idx) => (
+                <span
+                  key={idx}
+                  className={clsx(
+                    'px-2 py-1 text-xs font-medium rounded',
+                    getTagColor(tag)
+                  )}
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
+        {/* クリックできる要素であることを伝えるために追加 */}
         <div className="ml-auto">
           {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
         </div>

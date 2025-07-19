@@ -14,7 +14,8 @@ const projects = [
       'ピアノの鍵盤部分でイラスト・写真を楽しめる「ピアノーラ」を製作しています。',
     image: '/images/pianaura.JPG',
     details: <PianauraDetails />,
-    id: 'project-pianaura'
+    id: 'project-pianaura',
+    tags: ['新規事業', '意匠']
   },
   {
     title: '数式検索エンジンの事業化',
@@ -22,21 +23,24 @@ const projects = [
       '佐賀大学大学院での研究成果をもとに事業化を目指して起業しました。',
     image: '/images/SearchEngine.png',
     details: <TwelsDetails />,
-    id: 'project-twels'
+    id: 'project-twels',
+    tags: ['ビジコン', 'チーム開発', '特許', 'PCT国際出願']
   },
   {
     title: '数式検索エンジンの研究開発',
     description: '修士1年の夏から数式検索エンジンを研究開発しています。',
     image: '/images/SearchEngine.png',
     details: <SearchEngineDetails />,
-    id: 'project-search-engine'
+    id: 'project-search-engine',
+    tags: ['Python', 'Docker', 'Django', 'Scrapy', '字句/構文解析', 'MySQL']
   },
   {
     title: '入浴事故検知の研究',
     description: '学士3年後期から修士1年の夏までこの研究をしていました。',
     image: '/images/DrowsyBatherDetection.png',
     details: <DrowsyBatherDetectionDetails />,
-    id: 'project-drowsy-detection'
+    id: 'project-drowsy-detection',
+    tags: ['加速度センサ', 'Bluetooth', 'Kotlin', 'モバイルアプリ', 'Python']
   },
   {
     title:
@@ -45,7 +49,8 @@ const projects = [
       '3週間のシアトル研修後、半年間それぞれのプロジェクトに取り組みました。',
     image: '/images/Microsoft.JPG',
     details: <MicrosoftDetails />,
-    id: 'project-microsoft'
+    id: 'project-microsoft',
+    tags: ['短期留学']
   }
 ]
 
@@ -62,6 +67,7 @@ export default function Projects() {
               image={project.image}
               details={project.details}
               id={project.id}
+              tags={project.tags}
             />
           </div>
         ))}

@@ -13,14 +13,16 @@ const otherWorks = [
       'このサイトです。Next.js + Tailwind CSS + Dockerで作成しました。',
     image: '/images/HisashiKojima_square.JPG',
     details: <PortfolioDetails />,
-    id: 'work-portfolio'
+    id: 'work-portfolio',
+    tags: ['Next.js', 'React', 'Tailwind CSS', 'Docker']
   },
   {
     title: '動画編集',
     description: 'DaVinci Resolveを使って動画編集をしました。',
     image: '/images/pianaura_thumbnail.png',
     details: <VideoEditingDetails />,
-    id: 'work-video-edit'
+    id: 'work-video-edit',
+    tags: ['DaVinci Resolve']
   },
   {
     title: 'mathMap',
@@ -28,7 +30,8 @@ const otherWorks = [
       'グラフを活用して数学やそこから発展した技術の関係性を可視化しました。',
     image: '/images/mathMap.png',
     details: <MathMapDetails />,
-    id: 'work-mathmap'
+    id: 'work-mathmap',
+    tags: ['Docker', 'Node.js', 'G6']
   },
   {
     title: 'RoRop',
@@ -36,7 +39,8 @@ const otherWorks = [
       'アナログゲームのRoRopをWebアプリで作ってみました。開発期間：約1か月間',
     image: '/images/rorop.png',
     details: <RoRopDetails />,
-    id: 'work-rorop'
+    id: 'work-rorop',
+    tags: ['Next.js', 'Tailwind CSS']
   }
 ]
 
@@ -53,6 +57,7 @@ export default function OtherWorks() {
               image={work.image}
               details={work.details}
               id={work.id}
+              tags={work.tags}
             />
           </div>
         ))}
