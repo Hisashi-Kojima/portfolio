@@ -89,13 +89,13 @@ export default function WorkCard({
         onClick={() => setIsOpen(!isOpen)}
       >
         {image && (
-          <div className="flex items-center justify-center w-24 h-24 flex-shrink-0">
+          <div className="relative w-24 aspect-square flex-shrink-0">
             <Image
               src={image}
               alt={title}
-              width={96}
-              height={96}
+              fill
               className="object-cover rounded-md"
+              sizes="192px"
             />
           </div>
         )}

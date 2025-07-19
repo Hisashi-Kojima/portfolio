@@ -37,9 +37,10 @@ export default function Sidebar() {
       {/* 下部にプロフィール画像を表示 */}
       <div className="relative h-60 w-full">
         <Image
-          src={'/images/HisashiKojima.JPG'}
+          src="/images/HisashiKojima.JPG"
           alt="小嶋恒の写真"
           fill
+          sizes="25vw"
           className="object-contain rounded-lg"
         />
       </div>
