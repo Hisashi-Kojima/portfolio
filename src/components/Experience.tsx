@@ -20,12 +20,12 @@ export default function Experience() {
           を起業
         </>,
         <>
-          <a href="#project-search-engine" className="text-blue-500 underline">
+          <a href="#project-twels" className="text-blue-500 underline">
             VCから寄付を受けて事業検証に向けたチーム開発
           </a>
         </>,
         <>
-          <a href="#project-search-engine" className="text-blue-500 underline">
+          <a href="#project-twels" className="text-blue-500 underline">
             数式検索に関する特許の国内権利化
           </a>
         </>,

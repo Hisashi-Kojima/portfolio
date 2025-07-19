@@ -2,6 +2,7 @@
 
 import WorkCard from './WorkCard'
 import PianauraDetails from './ProjectsDetails/PianauraDetails'
+import TwelsDetails from './ProjectsDetails/twelsDetails'
 import SearchEngineDetails from './ProjectsDetails/SearchEngineDetails'
 import DrowsyBatherDetectionDetails from './ProjectsDetails/DrowsyBatherDetectionDetails'
 import MicrosoftDetails from './ProjectsDetails/MicrosoftDetails'
@@ -16,9 +17,16 @@ const projects = [
     id: 'project-pianaura'
   },
   {
-    title: '数式検索',
+    title: '数式検索エンジンの事業化',
     description:
       '佐賀大学大学院での研究成果をもとに事業化を目指して起業しました。',
+    image: '/images/SearchEngine.png',
+    details: <TwelsDetails />,
+    id: 'project-twels'
+  },
+  {
+    title: '数式検索エンジンの研究開発',
+    description: '修士1年の夏から数式検索エンジンを研究開発しています。',
     image: '/images/SearchEngine.png',
     details: <SearchEngineDetails />,
     id: 'project-search-engine'
