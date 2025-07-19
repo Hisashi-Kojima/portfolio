@@ -5,6 +5,18 @@ import ExternalLink from '../ExternalLink'
 export default function SearchEngineDetails() {
   return (
     <>
+      <h4 className="font-semibold">【数式検索について】</h4>
+      <p>
+        自然言語（日本語や英語など）は「会社」と「社会」のように、文字が入れ替わると意味が変わってしまいます。
+        一方、数式の場合「a=b」と「b=a」は同じ意味です。
+        このように自然言語と数式は特徴が異なるので、
+        自然言語用の検索エンジンをそのまま数式に適用させても
+        数式の特徴を捉えられません。
+      </p>
+      <p>
+        数式の構造を理解して数式の検索精度を高める数式検索エンジンを修士1年の夏から研究開発しました。
+      </p>
+      <h4 className="font-semibold">【ビジネスプランコンテスト】</h4>
       <p>
         九州旅客鉄道株式会社、西部ガスホールディングス株式会社といった
         九州の大手企業の事業部長クラスが審査員を務める
@@ -32,21 +44,28 @@ export default function SearchEngineDetails() {
         計17人で2022年10月から2023年3月の半年間、数式検索エンジンを大学内で公開し事業性を確認するためにチーム開発を行いました。
         <br />
         <br />
-        研究室のサーバで公開しています。
+        開発した数式検索エンジンは研究室のサーバで公開しています。
+        検索用データベースを更新していないので、検索結果は開発当時のものになります。
+        <br />
+        <br />
+        <ExternalLink href="https://eagle4.fu.is.saga-u.ac.jp/">
+          数式検索エンジン
+        </ExternalLink>
         <br />
         ログイン情報
         <br />
         メールアドレス：22801001@edu.cc.saga-u.ac.jp
         <br />
         パスワード&emsp;&ensp;：Hisashi1997
+        <br />
+        <br />
+        <h4 className="font-semibold">【特許】</h4>
+        数式検索に関する特許をPCT国際出願し、日本で権利化しました。
+        <br />
+        <ExternalLink href="https://www.j-platpat.inpit.go.jp/c1801/PU/JP-7371989/15/ja">
+          特許第7371989号
+        </ExternalLink>
       </p>
-      <ExternalLink href="https://eagle4.fu.is.saga-u.ac.jp/">
-        数式検索エンジン
-      </ExternalLink>
-      <p>数式検索に関する特許をPCT国際出願し、日本で権利化しました。</p>
-      <ExternalLink href="https://www.j-platpat.inpit.go.jp/c1801/PU/JP-7371989/15/ja">
-        特許第7371989号
-      </ExternalLink>
     </>
   )
 }

@@ -3,10 +3,7 @@
 export default function VideoEditingDetails() {
   return (
     <>
-      <p>
-        DaVinci Resolveを使って動画編集をしました。
-        以下は私が編集したピアノーラのPR動画です。
-      </p>
+      <p>以下は私が編集したピアノーラのPR動画です。</p>
       <iframe
         width="auto"
         height="100%"

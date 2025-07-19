@@ -9,7 +9,8 @@ import MicrosoftDetails from './ProjectsDetails/MicrosoftDetails'
 const projects = [
   {
     title: 'ピアノーラ',
-    description: 'ピアノの鍵盤部分でイラスト・写真を楽しめる製品です。',
+    description:
+      'ピアノの鍵盤部分でイラスト・写真を楽しめる「ピアノーラ」を製作しています。',
     image: '/images/pianaura.JPG',
     details: <PianauraDetails />,
     id: 'project-pianaura'

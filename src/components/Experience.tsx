@@ -38,6 +38,12 @@ export default function Experience() {
           <a href="#project-pianaura" className="text-blue-500 underline">
             「ピアノーラ」に関する意匠権の国内権利化
           </a>
+        </>,
+        <>
+          <ExternalLink href="https://www.tomonextgensummit.org/ja">
+            TOMODACHI Next Generation Summit 2025
+          </ExternalLink>
+          にてスピーチ予定
         </>
       ]
     },

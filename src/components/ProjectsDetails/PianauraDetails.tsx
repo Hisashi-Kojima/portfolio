@@ -5,7 +5,11 @@ import ExternalLink from '../ExternalLink'
 export default function PianauraDetails() {
   return (
     <>
-      <p>ピアノーラを電子ピアノに被せて演奏した動画です。</p>
+      <p>
+        ピアノーラはカバーなので、既存のピアノに被せて、そのまま演奏できます。
+        <br />
+        ピアノーラを電子ピアノに被せて演奏した動画です。
+      </p>
       <iframe
         width="315"
         height="560"
@@ -16,7 +20,7 @@ export default function PianauraDetails() {
         allowFullScreen
       ></iframe>
       <p>
-        詳細：
+        ピアノーラの詳細：
         <ExternalLink href="https://www.twels.co.jp/">
           twelS株式会社
         </ExternalLink>
@@ -30,10 +34,13 @@ export default function PianauraDetails() {
           ピアノの鍵盤部分をキャンバスに！イラストや写真で自分だけのピアノに変身！
         </ExternalLink>
       </p>
-      <p>ピアノーラに関して、意匠権を日本で権利化しました。</p>
-      <ExternalLink href="https://www.j-platpat.inpit.go.jp/c1801/DE/JP-2024-027404/30/ja">
-        登録第1801102号
-      </ExternalLink>
+      <p>
+        ピアノーラに関して、意匠権を日本で権利化しました。
+        <br />
+        <ExternalLink href="https://www.j-platpat.inpit.go.jp/c1801/DE/JP-2024-027404/30/ja">
+          登録第1801102号
+        </ExternalLink>
+      </p>
     </>
   )
 }
