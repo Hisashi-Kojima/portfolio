@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import clsx from 'clsx'
+import { ChevronDown, ChevronUp } from 'lucide-react'
 
 interface WorkCardProps {
   title: string
@@ -49,7 +50,7 @@ export default function WorkCard({
       )}
     >
       <div
-        className="flex items-center gap-4 cursor-pointer"
+        className="flex items-center gap-4 cursor-pointer hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded-lg -m-2 transition-colors"
         onClick={() => setIsOpen(!isOpen)}
       >
         {image && (
@@ -68,6 +69,9 @@ export default function WorkCard({
           <p className="text-gray-600 dark:text-gray-300 text-sm">
             {description}
           </p>
+        </div>
+        <div className="ml-auto">
+          {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
         </div>
       </div>
 
