@@ -15,7 +15,7 @@ const projects = [
     image: '/images/pianaura.JPG',
     details: <PianauraDetails />,
     id: 'project-pianaura',
-    tags: ['新規事業', '意匠']
+    tags: ['新規事業', '意匠', 'YouTuberへの依頼']
   },
   {
     title: '数式検索エンジンの事業化',

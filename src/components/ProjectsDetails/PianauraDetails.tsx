@@ -17,6 +17,7 @@ export default function PianauraDetails() {
         title="ピアノーラで絢香さんの「みんな空の下」を弾いてみた動画"
         ratio="aspect-[9/16]"
       />
+      <br />
       <p>
         ピアノーラのアイデア、良さを多くの人に知っていただきたかったので、
         クラシックピアニストのりほピアノさん（YouTubeの登録者数：当時17.8万人）にご連絡したところ、
