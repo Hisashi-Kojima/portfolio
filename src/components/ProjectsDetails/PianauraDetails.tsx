@@ -1,6 +1,7 @@
 'use client'
 
 import ExternalLink from '../ExternalLink'
+import VideoEmbed from '../VideoEmbed'
 
 export default function PianauraDetails() {
   return (
@@ -11,15 +12,20 @@ export default function PianauraDetails() {
         ピアノーラを電子ピアノに被せて演奏した動画です。
         この演奏は研究室の後輩で一緒に活動している中川の演奏です。
       </p>
-      <iframe
-        width="315"
-        height="560"
+      <VideoEmbed
         src="https://www.youtube.com/embed/80K3_SSpqQ0"
-        title="みんな空の下 / 絢香【ピアノーラ】#shorts #弾いてみた #ピアノ #piano"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen
-      ></iframe>
+        title="ピアノーラで絢香さんの「みんな空の下」を弾いてみた動画"
+        ratio="aspect-[9/16]"
+      />
+      <p>
+        ピアノーラのアイデア、良さを多くの人に知っていただきたかったので、
+        クラシックピアニストのりほピアノさん（YouTubeの登録者数：当時17.8万人）にご連絡したところ、
+        ご快諾いただき、案件動画としてピアノーラを使った動画を公開していただきました。
+      </p>
+      <VideoEmbed
+        src="https://www.youtube.com/embed/IcTSL8lix-k"
+        title="りほピアノさんがピアノーラを使用した演奏動画"
+      />
       <p>
         ピアノーラの詳細：
         <ExternalLink href="https://www.twels.co.jp/">

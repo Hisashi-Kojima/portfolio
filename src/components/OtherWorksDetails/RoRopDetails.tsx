@@ -1,6 +1,7 @@
 'use client'
 
 import ExternalLink from '../ExternalLink'
+import VideoEmbed from '../VideoEmbed'
 
 export default function RoRopDetails() {
   return (
@@ -12,15 +13,11 @@ export default function RoRopDetails() {
         </ExternalLink>
         を製作者の許可のもと、Webアプリで作ってみました。
       </p>
-      <iframe
-        width="315"
-        height="560"
+      <VideoEmbed
         src="https://www.youtube.com/embed/JvvYMLsVDPo"
-        title="RoRop_Webアプリ_デモ動画"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen
-      ></iframe>
+        title="RoRopのWebアプリのデモ動画"
+        ratio="aspect-[9/16]"
+      />
       <p>
         コンピュータ対戦など、もっと作り込めますが、
         今回はReactやNext.jsの勉強が目的であまり時間を割けなかったので、開発はこれでやめています。

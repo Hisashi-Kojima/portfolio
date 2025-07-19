@@ -1,6 +1,7 @@
 'use client'
 
 import ExternalLink from '../ExternalLink'
+import VideoEmbed from '../VideoEmbed'
 
 export default function DrowsyBatherDetectionDetails() {
   return (
@@ -10,15 +11,10 @@ export default function DrowsyBatherDetectionDetails() {
         加速度センサーで頭部の動きをトラッキングしたかったので、加速度センサーのデータを取得するAndroidアプリをKotlinで作成しました。
       </p>
       <br />
-      <iframe
-        width="auto"
-        height="100%"
+      <VideoEmbed
         src="https://www.youtube.com/embed/Y79EFQA0YPk?si=9Y4MO-aZFbSvvRfq"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen
-      ></iframe>
+        title="加速度データ取得アプリのデモ動画"
+      />
       <br />
       <p>
         取得した加速度データはPythonとグラフ描画ライブラリであるMatplotlibなどを活用して分析し、
@@ -26,26 +22,16 @@ export default function DrowsyBatherDetectionDetails() {
       </p>
       <br />
       <p>様々なグラフ</p>
-      <iframe
-        width="auto"
-        height="100%"
+      <VideoEmbed
         src="https://www.youtube.com/embed/SAsWH9XU7Xw?si=F7P-Lspa_KhK75bT"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen
-      ></iframe>
+        title="加速度データの様々なグラフの動画"
+      />
       <br />
       <p>時間変化のグラフ</p>
-      <iframe
-        width="auto"
-        height="100%"
+      <VideoEmbed
         src="https://www.youtube.com/embed/BXru-nQj9KY?si=VvVgpV1zZQGLJs8h"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen
-      ></iframe>
+        title="加速度データの時間変化のグラフ"
+      />
       <br />
       <br />
       <p>英語で論文を書きました。</p>
