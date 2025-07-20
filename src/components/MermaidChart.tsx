@@ -7,13 +7,22 @@ interface MermaidChartProps {
   chart: string
 }
 
+/**
+ * Mermaid.js を使用して、Mermaid 記法で定義された図を描画するためのコンポーネント。
+ * @param chart - Mermaid 記法で記述されたチャート定義文字列
+ * @returns Mermaid.js により描画された図
+ */
 export default function MermaidChart({ chart }: MermaidChartProps) {
   const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    const prefersDark = window.matchMedia(
+      '(prefers-color-scheme: dark)'
+    ).matches
+
     mermaid.initialize({
       startOnLoad: false,
-      theme: 'default',
+      theme: prefersDark ? 'dark' : 'default',
       themeVariables: {
         fontSize: '12px'
       }

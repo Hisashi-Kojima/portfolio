@@ -3,3 +3,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+p {
+  @apply leading-relaxed;
+}

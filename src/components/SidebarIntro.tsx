@@ -7,7 +7,7 @@ export default function SidebarIntro() {
           ソフトウェアエンジニア
         </p>
       </div>
-      <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+      <p className="text-sm text-gray-600 dark:text-gray-300">
         アプリを作ったり、学生起業して新規事業に取り組んだりしています。
       </p>
     </div>

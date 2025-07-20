@@ -2,7 +2,7 @@
 
 interface VideoEmbedProps {
   src: string
-  ratio?: string // 例）'aspect-video' や 'aspect-[9/16]'
+  ratio?: string // 例）'aspect-video' や 'aspect-9/16'
   title?: string
 }
 
@@ -16,7 +16,7 @@ export default function VideoEmbed({
       <iframe
         src={src}
         title={title}
-        className="absolute top-0 left-0 w-full h-full rounded"
+        className="absolute top-0 left-0 w-full h-full rounded-sm"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen

@@ -55,7 +55,7 @@ export default function SearchEngineDetails() {
         検索エンジンは多くのリクエストをさばく必要があるので、
         メモリ使用量が比較的少量で済みそうなMySQLを選びました。
       </p>
-      <div className="overflow-x-auto border rounded p-4 bg-white dark:bg-zinc-800">
+      <div className="border rounded-sm p-4 bg-white dark:bg-zinc-800">
         <p>
           UIで数式をレンダーするためにMathJaxを使用しています。
           PythonでWebアプリを作るためにDjangoを使用しています。
@@ -88,8 +88,8 @@ export default function SearchEngineDetails() {
         開発した数式検索エンジンは研究室のサーバで公開しています。
         検索用データベースを更新していないので、検索結果は開発当時のものになります。
         また、いくつかのサイトのみクロールしているので、すべてのサイトを検索できる訳ではありません。
-        <br />
-        <br />
+      </p>
+      <p>
         <ExternalLink href="https://eagle4.fu.is.saga-u.ac.jp/">
           数式検索エンジン
         </ExternalLink>

@@ -16,13 +16,13 @@ export default function RoRopDetails() {
       <VideoEmbed
         src="https://www.youtube.com/embed/JvvYMLsVDPo"
         title="RoRopのWebアプリのデモ動画"
-        ratio="aspect-[9/16]"
+        ratio="aspect-9/16"
       />
       <p>
         コンピュータ対戦など、もっと作り込めますが、
         今回はReactやNext.jsの勉強が目的であまり時間を割けなかったので、開発はこれでやめています。
-        <br />
-        <br />
+      </p>
+      <p>
         ルール通りの挙動になっているか確認するためにテストも作成しています。
       </p>
     </>

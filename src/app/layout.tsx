@@ -4,7 +4,7 @@ import Sidebar from '@/components/Sidebar'
 
 export const metadata = {
   title: 'ポートフォリオ',
-  description: '私のポートフォリオサイト'
+  description: '小嶋恒のポートフォリオサイト'
 }
 
 export default function RootLayout({

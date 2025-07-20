@@ -88,6 +88,7 @@ export default function WorkCard({
         className="flex items-center gap-4 cursor-pointer hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded-lg -m-2 transition-colors"
         onClick={() => setIsOpen(!isOpen)}
       >
+        {/* サムネイル画像 */}
         {image && (
           <div className="relative w-24 aspect-square flex-shrink-0">
             <Image
@@ -111,7 +112,7 @@ export default function WorkCard({
                 <span
                   key={idx}
                   className={clsx(
-                    'px-2 py-1 text-xs font-medium rounded',
+                    'px-2 py-1 text-xs font-medium rounded-sm',
                     getTagColor(tag)
                   )}
                 >
@@ -127,6 +128,7 @@ export default function WorkCard({
         </div>
       </div>
 
+      {/* open時に表示する要素 */}
       <div
         className={clsx(
           'grid transition-all duration-300 ease-in-out',

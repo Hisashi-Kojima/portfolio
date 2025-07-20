@@ -15,7 +15,7 @@ export default function PianauraDetails() {
       <VideoEmbed
         src="https://www.youtube.com/embed/80K3_SSpqQ0"
         title="ピアノーラで絢香さんの「みんな空の下」を弾いてみた動画"
-        ratio="aspect-[9/16]"
+        ratio="aspect-9/16"
       />
       <br />
       <p>

@@ -16,7 +16,7 @@ const sections = [
 export default function Sidebar() {
   const activeId = useScrollSpy(
     sections.map((s) => s.id),
-    100
+    0
   )
 
   return (
