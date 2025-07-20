@@ -7,8 +7,13 @@ export default function PianauraDetails() {
   return (
     <>
       <p>
+        ピアノの鍵盤部分が白黒だけなのはもったいないという思いから
+        このプロジェクトは始まりました。
+      </p>
+      <p>
         ピアノーラはカバーなので、既存のピアノに被せて、そのまま演奏できます。
-        <br />
+      </p>
+      <p>
         ピアノーラを電子ピアノに被せて演奏した動画です。
         この演奏は研究室の後輩で一緒に活動している中川の演奏です。
       </p>
@@ -27,6 +32,10 @@ export default function PianauraDetails() {
         src="https://www.youtube.com/embed/IcTSL8lix-k"
         title="りほピアノさんがピアノーラを使用した演奏動画"
       />
+      <p>
+        私と後輩はどちらもITが専門で製造業に関する知識は全くありませんでしたが、
+        製造業の方々に相談して1年でここまで形になりました。
+      </p>
       <p>
         ピアノーラの詳細：
         <ExternalLink href="https://www.twels.co.jp/">

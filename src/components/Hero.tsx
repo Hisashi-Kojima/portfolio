@@ -14,6 +14,7 @@ export default function Hero() {
             fill
             className="object-cover object-[center_20%]"
             sizes="160px"
+            priority
           />
         </div>
       </div>

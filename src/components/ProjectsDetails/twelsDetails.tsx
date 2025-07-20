@@ -2,6 +2,7 @@
 
 import ExternalLink from '../ExternalLink'
 import ListDisc from '../ListDisc'
+import VideoEmbed from '../VideoEmbed'
 
 export default function TwelsDetails() {
   return (
@@ -76,6 +77,11 @@ export default function TwelsDetails() {
         パスワード&emsp;&ensp;：Hisashi1997
         <br />
       </p>
+      <VideoEmbed
+        src="https://www.youtube.com/embed/eJ5qKTu0j_0"
+        title="数式検索エンジンのデモ動画"
+      />
+      <br />
       <h4 className="font-semibold">【特許】</h4>
       <p>
         数式検索に関する特許をPCT国際出願し、日本で権利化しました。

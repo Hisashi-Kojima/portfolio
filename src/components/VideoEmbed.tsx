@@ -6,6 +6,13 @@ interface VideoEmbedProps {
   title?: string
 }
 
+/**
+ * YouTubeなどの埋め込み動画を埋め込むためのコンポーネント。
+ * @param src - 埋め込み動画用のURL
+ * @param ratio - 埋め込み動画の縦横比。縦にしたいなら'aspect-9/16'などを渡す。
+ * @param title - 動画のタイトル
+ * @returns 埋め込み動画
+ */
 export default function VideoEmbed({
   src,
   ratio = 'aspect-video',

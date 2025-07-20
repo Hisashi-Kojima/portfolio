@@ -2,6 +2,7 @@
 
 import ExternalLink from '../ExternalLink'
 import MermaidChart from '../MermaidChart'
+import VideoEmbed from '../VideoEmbed'
 
 const chartCode1 = `
   graph TD;
@@ -85,6 +86,13 @@ export default function SearchEngineDetails() {
         <p>これらはDocker Composeで管理しました。</p>
       </div>
       <p>
+        2年間ほど1人で開発した後で、約半年間チームで開発しました。
+        チーム全体でミスを減らすためにGitHub Actionsを導入しました。
+      </p>
+      <p>
+        ログイン機能の実装でメール配信が必要になったので、SendGridを使用しました。
+      </p>
+      <p>
         開発した数式検索エンジンは研究室のサーバで公開しています。
         検索用データベースを更新していないので、検索結果は開発当時のものになります。
         また、いくつかのサイトのみクロールしているので、すべてのサイトを検索できる訳ではありません。
@@ -101,6 +109,10 @@ export default function SearchEngineDetails() {
         パスワード&emsp;&ensp;：Hisashi1997
         <br />
       </p>
+      <VideoEmbed
+        src="https://www.youtube.com/embed/eJ5qKTu0j_0"
+        title="数式検索エンジンのデモ動画"
+      />
     </>
   )
 }

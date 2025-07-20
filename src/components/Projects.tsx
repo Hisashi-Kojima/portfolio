@@ -28,11 +28,22 @@ const projects = [
   },
   {
     title: '数式検索エンジンの研究開発',
-    description: '修士1年の夏から数式検索エンジンを研究開発しています。',
+    description:
+      '修士1年の夏から数式検索エンジンを研究開発しています。開発期間：約2年半',
     image: '/images/SearchEngine.png',
     details: <SearchEngineDetails />,
     id: 'project-search-engine',
-    tags: ['Python', 'Docker', 'Django', 'Scrapy', '字句/構文解析', 'MySQL']
+    tags: [
+      'Python',
+      'Docker',
+      'Django',
+      'Scrapy',
+      '字句/構文解析',
+      'MySQL',
+      'pytest',
+      'GitHub Actions',
+      'SendGrid'
+    ]
   },
   {
     title: '入浴事故検知の研究',
@@ -40,7 +51,14 @@ const projects = [
     image: '/images/DrowsyBatherDetection.png',
     details: <DrowsyBatherDetectionDetails />,
     id: 'project-drowsy-detection',
-    tags: ['加速度センサ', 'Bluetooth', 'Kotlin', 'モバイルアプリ', 'Python']
+    tags: [
+      '加速度センサ',
+      'Bluetooth',
+      'Kotlin',
+      'モバイルアプリ',
+      'Python',
+      'Firebase'
+    ]
   },
   {
     title:

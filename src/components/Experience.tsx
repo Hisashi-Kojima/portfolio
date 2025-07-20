@@ -65,12 +65,12 @@ export default function Experience() {
           </a>
         </>,
         <>
-          <a href="#project-search-engine" className="text-blue-500 underline">
+          <a href="#project-twels" className="text-blue-500 underline">
             ビジネスプランコンテスト入賞
           </a>
         </>,
         <>
-          <a href="#project-search-engine" className="text-blue-500 underline">
+          <a href="#project-twels" className="text-blue-500 underline">
             数式検索に関する特許のPCT出願
           </a>
         </>
@@ -122,7 +122,7 @@ export default function Experience() {
             <h3 className="text-xl font-bold">
               {exp.period} - {exp.organization}
             </h3>
-            <ul className="list-disc list-inside mt-2 text-gray-600 dark:text-gray-300">
+            <ul className="list-disc list-inside mt-2 text-gray-700 dark:text-gray-300">
               {exp.items.map((item, i) => (
                 <li key={i}>{item}</li>
               ))}

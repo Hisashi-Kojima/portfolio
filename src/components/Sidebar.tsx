@@ -28,7 +28,7 @@ export default function Sidebar() {
             key={section.id}
             href={`#${section.id}`}
             className={clsx(
-              'block text-gray-600 hover:text-black dark:hover:text-white transition-colors',
+              'block text-gray-700 hover:text-black dark:hover:text-white transition-colors',
               activeId === section.id && 'font-bold text-black dark:text-white'
             )}
           >
@@ -45,6 +45,7 @@ export default function Sidebar() {
           fill
           sizes="25vw"
           className="object-contain rounded-lg"
+          priority
         />
       </div>
     </div>

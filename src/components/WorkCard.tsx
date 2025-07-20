@@ -26,7 +26,10 @@ const programmingTags = [
   'Django',
   'Scrapy',
   'MySQL',
-  'G6'
+  'Firebase',
+  'G6',
+  'pytest',
+  'Jest'
 ]
 
 const techTags = [
@@ -34,7 +37,9 @@ const techTags = [
   '加速度センサ',
   '字句/構文解析',
   'モバイルアプリ',
-  'DaVinci Resolve'
+  'DaVinci Resolve',
+  'GitHub Actions',
+  'SendGrid'
 ]
 
 function getTagColor(tag: string): string {
@@ -102,7 +107,7 @@ export default function WorkCard({
         )}
         <div>
           <h3 className="text-xl font-bold">{title}</h3>
-          <p className="text-gray-600 dark:text-gray-300 text-sm">
+          <p className="text-gray-700 dark:text-gray-300 text-sm">
             {description}
           </p>
 
@@ -137,7 +142,7 @@ export default function WorkCard({
             : 'grid-rows-[0fr] opacity-0'
         )}
       >
-        <div className="overflow-hidden text-sm text-gray-700 dark:text-gray-300 space-y-4">
+        <div className="overflow-hidden text-sm text-gray-800 dark:text-gray-300 space-y-4">
           {details}
         </div>
       </div>

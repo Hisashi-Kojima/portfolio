@@ -3,7 +3,7 @@ import './globals.css'
 import Sidebar from '@/components/Sidebar'
 
 export const metadata = {
-  title: 'ポートフォリオ',
+  title: '小嶋恒のポートフォリオ',
   description: '小嶋恒のポートフォリオサイト'
 }
 

@@ -10,7 +10,7 @@ const otherWorks = [
   {
     title: 'ポートフォリオ',
     description:
-      'このサイトです。Next.js + Tailwind CSS + Dockerで作成しました。',
+      'このサイトです。Next.js + Tailwind CSS + Dockerで作成しました。開発期間：約1週間',
     image: '/images/HisashiKojima_square.JPG',
     details: <PortfolioDetails />,
     id: 'work-portfolio',
@@ -27,7 +27,7 @@ const otherWorks = [
   {
     title: 'mathMap',
     description:
-      'グラフを活用して数学やそこから発展した技術の関係性を可視化しました。',
+      'グラフを活用して数学やそこから発展した技術の関係性を可視化しました。開発期間：約1週間',
     image: '/images/mathMap.png',
     details: <MathMapDetails />,
     id: 'work-mathmap',
@@ -40,7 +40,7 @@ const otherWorks = [
     image: '/images/rorop.png',
     details: <RoRopDetails />,
     id: 'work-rorop',
-    tags: ['Next.js', 'Tailwind CSS']
+    tags: ['Next.js', 'Tailwind CSS', 'Jest']
   }
 ]
 
