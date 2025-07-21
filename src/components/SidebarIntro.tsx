@@ -2,7 +2,7 @@ export default function SidebarIntro() {
   return (
     <div className="space-y-4">
       <div>
-        <h1 className="text-3xl font-bold">小嶋　恒（こじま　ひさし）</h1>
+        <h1 className="text-3xl font-bold">小嶋 恒（こじま ひさし）</h1>
         <p className="text-gray-600 dark:text-gray-400">
           ソフトウェアエンジニア
         </p>
