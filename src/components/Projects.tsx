@@ -1,6 +1,6 @@
 'use client'
 
-import WorkCard from './WorkCard'
+import WorkCardSection from './WorkCardSection'
 import PianauraDetails from './ProjectsDetails/PianauraDetails'
 import TwelsDetails from './ProjectsDetails/twelsDetails'
 import SearchEngineDetails from './ProjectsDetails/SearchEngineDetails'
@@ -73,23 +73,5 @@ const projects = [
 ]
 
 export default function Projects() {
-  return (
-    <section id="projects" className="py-8 px-4">
-      <h2 className="text-3xl font-semibold mb-4">プロジェクト</h2>
-      <div className="flex flex-wrap gap-8">
-        {projects.map((project, idx) => (
-          <div key={idx} className="w-full md:w-[calc(50%-1rem)]">
-            <WorkCard
-              title={project.title}
-              description={project.description}
-              image={project.image}
-              details={project.details}
-              id={project.id}
-              tags={project.tags}
-            />
-          </div>
-        ))}
-      </div>
-    </section>
-  )
+  return <WorkCardSection id="projects" title="プロジェクト" items={projects} />
 }

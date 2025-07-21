@@ -16,7 +16,7 @@ export default function RoRopDetails() {
       <VideoEmbed
         src="https://www.youtube.com/embed/JvvYMLsVDPo"
         title="RoRopのWebアプリのデモ動画"
-        ratio="aspect-9/16"
+        orientation="vertical"
       />
       <p>
         コンピュータ対戦など、もっと作り込めますが、
