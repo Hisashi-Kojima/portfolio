@@ -1,6 +1,6 @@
 'use client'
 
-import WorkCard from './WorkCard'
+import WorkCardSection from './WorkCardSection'
 import VideoEditingDetails from './OtherWorksDetails/VideoEditingDetails'
 import MathMapDetails from './OtherWorksDetails/MathMapDetails'
 import RoRopDetails from './OtherWorksDetails/RoRopDetails'
@@ -46,22 +46,10 @@ const otherWorks = [
 
 export default function OtherWorks() {
   return (
-    <section id="other-works" className="py-8 px-4">
-      <h2 className="text-3xl font-semibold mb-4">その他の制作物</h2>
-      <div className="flex flex-wrap gap-8">
-        {otherWorks.map((work, idx) => (
-          <div key={idx} className="w-full md:w-[calc(50%-1rem)]">
-            <WorkCard
-              title={work.title}
-              description={work.description}
-              image={work.image}
-              details={work.details}
-              id={work.id}
-              tags={work.tags}
-            />
-          </div>
-        ))}
-      </div>
-    </section>
+    <WorkCardSection
+      id="other-works"
+      title="その他の制作物"
+      items={otherWorks}
+    />
   )
 }
