@@ -2,9 +2,35 @@ import React from 'react'
 import './globals.css'
 import Sidebar from '@/components/Sidebar'
 
+const siteUrl = 'https://portfolio-ebon-six-54.vercel.app'
+
 export const metadata = {
   title: '小嶋恒のポートフォリオ',
-  description: '小嶋恒のポートフォリオサイト'
+  description:
+    '小嶋恒がこれまで取り組んできたことや制作したアプリ等を紹介しています。',
+  openGraph: {
+    title: '小嶋恒のポートフォリオ',
+    description:
+      '小嶋恒がこれまで取り組んできたことや制作したアプリ等を紹介しています。',
+    url: siteUrl,
+    siteName: 'KOJIMA Hisashi Portfolio',
+    images: [
+      {
+        url: `${siteUrl}/images/HisashiKojima_square.JPG`,
+        width: 500,
+        height: 500,
+        alt: '小嶋恒の画像'
+      }
+    ],
+    type: 'website'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '小嶋恒のポートフォリオ',
+    description:
+      '小嶋恒がこれまで取り組んできたことや制作したアプリ等を紹介しています。',
+    images: [`${siteUrl}/images/HisashiKojima_square.JPG`]
+  }
 }
 
 export default function RootLayout({
