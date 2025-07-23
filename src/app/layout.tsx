@@ -45,7 +45,7 @@ export default function RootLayout({
           <aside className="hidden lg:block w-1/4 border-r border-zinc-700 p-6 sticky top-0 h-screen">
             <Sidebar />
           </aside>
-          <main className="flex-1 p-6">{children}</main>
+          <main className="flex-1 p-2 lg:p-6">{children}</main>
         </div>
       </body>
     </html>
