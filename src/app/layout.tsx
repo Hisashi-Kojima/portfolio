@@ -16,9 +16,9 @@ export const metadata = {
     siteName: 'KOJIMA Hisashi Portfolio',
     images: [
       {
-        url: `${siteUrl}/images/HisashiKojima_square.JPG`,
-        width: 500,
-        height: 500,
+        url: `${siteUrl}/images/HisashiKojima_OGP.png`,
+        width: 1200,
+        height: 630,
         alt: '小嶋恒の画像'
       }
     ],
@@ -29,7 +29,7 @@ export const metadata = {
     title: '小嶋恒のポートフォリオ',
     description:
       '小嶋恒がこれまで取り組んできたことや制作したアプリ等を紹介しています。',
-    images: [`${siteUrl}/images/HisashiKojima_square.JPG`]
+    images: [`${siteUrl}/images/HisashiKojima_OGP.png`]
   }
 }
 
